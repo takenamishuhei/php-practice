@@ -59,4 +59,4 @@ echo $prev->diff($now)->format('%a')
 ```
 
 - PHPのマニュアル画面右上の検索バーに「DateTime」を入力。ClassのDateTimeをクリックし、
-DateTimeのメソッドにあるdiffをクリックして戻り値を参照。
+DateTimeのメソッドにあるdiffをクリックして、参考からDateInterval::formatをクリックし戻り値を参照。

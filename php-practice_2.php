@@ -22,6 +22,24 @@ for ($i = 1; $i <= 100; $i++) {
 
 // Q2 多次元連想配列
 
+$personalInfos = [
+  [
+      'name' => 'Aさん',
+      'mail' => 'aaa@mail.com',
+      'tel'  => '09011112222'
+  ],
+  [
+      'name' => 'Bさん',
+      'mail' => 'bbb@mail.com',
+      'tel'  => '08033334444'
+  ],
+  [
+      'name' => 'Cさん',
+      'mail' => 'ccc@mail.com',
+      'tel'  => '09055556666'
+  ],
+];
+
 // Q1
 echo $personalInfos[1]['name'] . 'の電話番号は' . $personalInfos[1]['tel'] . 'です。';
 
@@ -77,8 +95,6 @@ echo $time->format('Y-m-d');
 // Q2
 $time1 = new DateTime();
 $time2 = new DateTime('1992-04-25');
-$diff = $time1->diff($time2);
-
-echo $diff->format('あの日から%a日経過しました。');
+echo $time2->diff($time1)->format('あの日から%a日経過しました。');
 
 ?>
