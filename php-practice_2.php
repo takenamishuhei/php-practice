@@ -88,9 +88,7 @@ $yamada->attend('PHP');
 
 // Q1
 $time = new DateTime();
-$time->sub(new DateInterval('P1M'));
-
-echo $time->format('Y-m-d');
+echo $time->sub(new DateInterval('P1M'))->format('Y-m-d');
 
 // Q2
 $time1 = new DateTime();
